@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 const DROP_COOLDOWN = 10000;
-const RECIEVER_ID = "id1";
+const RECIEVER_ID = "id2";
 const API_URL = "http://localhost:5000";
 const CONFIDENCE_THRESHOLD = 0.7;
 
@@ -26,7 +26,7 @@ const DropPage = ({ currentGesture, gestureConfidence }) => {
 
       if (data.success && data.imagePath) {
         setTimeout(() => {
-          setRecievedImage(`${API_URL}/${data.imagePath}`);
+          setRecievedImage(`${API_URL}${data.imagePath}`);
           setIsDropping(false);
           setHasDropped(true);
         }, 1000);
