@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const DROP_COOLDOWN = 10000;
 const RECIEVER_ID = "id1";
@@ -86,11 +87,25 @@ const DropPage = ({ currentGesture, gestureConfidence }) => {
                 <ArrowDown className="w-16 h-16 text-green-400 mb-4" />
                 <span className="text-sm text-gray-600">Waiting for drop gesture...</span>
               </div>
+
+              <Link to="/" className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex items-center gap-2 text-gray-600 text-xs underline px-6 py-3 transition-colors">
+                Back to home
+              </Link>
             </div>
           )}
         </div>
       ) : (
-        <div></div>
+        <div className="relative w-full h-screen">
+            {isDropping && (
+              <div className='absolute inset-0 flex items-center justify-center bg-black z-10'>
+                <div className='animate-ping absolute w-32 h-32 rounded-full opacity-75 bg-white'></div>
+                <div className='animate-pulse absolute w-64 h-64 rounded-full opacity-50 bg-white'></div>
+                <div className='animate-bounce absolute w-96 h-96 rounded-full bg-white'></div>
+              </div>
+            )}
+
+            <img src={recievedImage} alt="Recieved" className="w-full h-full object-contain" />
+        </div>
       )}
     </div>
   );
