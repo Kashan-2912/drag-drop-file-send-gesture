@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 
 const GestureDetector = ({ onGesture }) => {
   const MODEL_URL =
-    // "https://teachablemachinbe.withgoogle.com/models/sG3DX3BM_/model.json";
-    "https://teachablemachine.withgoogle.com/models/ys_R_htjT/model.json";
+    "https://teachablemachine.withgoogle.com/models/sG3DX3BM_/model.json"
+    // "https://teachablemachine.withgoogle.com/models/ys_R_htjT/model.json";
 
   const videoRef = useRef();
   const [isVideoStarted, setIsVideoStarted] = useState(false);

@@ -14,7 +14,7 @@ const PORT = 5000;
 
 app.use(cors({
   origin: function (origin, callback) {
-    const allowedOrigins = ['http://localhost:5173'];
+    const allowedOrigins = ['http://localhost:5173', 'https://huawei-gesture-send.netlify.app'];
 
     if (!origin) { // if req coming from some postman thing....
       return callback(null, true);
