@@ -1,0 +1,73 @@
+# Ignore node_modules folder
+/node_modules
+
+# Ignore log files
+/*.log
+
+# Ignore database files
+/*.db
+/*.sqlite
+/*.sqlite3
+
+# Ignore os specific files
+/Darwin/Thumbs.db
+/Linux/.*~
+
+# Ignore user specific files
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Ignore coverage files
+/coverage
+
+# Ignore build files
+/build
+/dist
+
+# Ignore local files
+/localstorage-development.db
+/localstorage-production.db
+/localstorage-test.db
+
+# Ignore temp files
+*.tmp
+*.swp
+*.swo
+*.cache
+*.log
+*.pid
+*.sass-cache
+*.sublime
+*.sublime-project
+*.sublime-workspace
+*.vs
+*.vscode
+*.vssscc
+*.webstorm
+*.idea
+*.iml
+*.ipynb_checkpoints
+*.jupyter
+*.egg-info
+*.pyc
+*.pyo
+*.pyd
+*.pyo.d
+*.egg
+*.mypy_cache
+*.pytest_cache
+.tox
+.venv
+.egg-info/
+dist/
+build/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+*.log
+*.db
+*.sqlite
+*.sqlite3
