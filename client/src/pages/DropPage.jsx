@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const DROP_COOLDOWN = 10000;
 const RECIEVER_ID = "id2";
-const API_URL = "http://localhost:5000";
+const API_URL = "https://drag-drop-file-send-gesture.onrender.com";
 const CONFIDENCE_THRESHOLD = 0.7;
 
 const DropPage = ({ currentGesture, gestureConfidence }) => {

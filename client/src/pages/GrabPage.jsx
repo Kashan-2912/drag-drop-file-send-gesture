@@ -6,7 +6,7 @@ const GrabPage = ({ currentGesture, gestureConfidence }) => {
 
   const GRAB_COOLDOWN = 10000;
   const USER_ID = "id1"
-  const API_URL = "http://localhost:5000";
+  const API_URL = "https://drag-drop-file-send-gesture.onrender.com";
   const CONFIDENCE_THRESHOLD = 0.7;
 
   const [selectedImage , setSelectedImage] = useState(null);
